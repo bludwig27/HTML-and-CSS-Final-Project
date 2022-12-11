@@ -1,0 +1,152 @@
+﻿*{
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+body {
+	font-family:'Courier New', Courier, monospace;
+	font-size:1.5em;
+	background-color:lemonchiffon;
+}
+h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 300%;
+    color:#CD943E;
+    text-shadow:2px 2px 2px black;
+    box-shadow:inset;
+    background-color: none;
+    margin-right: 15%;
+}
+nav {
+	width:100%;
+	height:auto;
+    background-color:goldenrod;
+    text-align:left;
+    clear:both;
+    float:left;  
+}
+nav ul li {
+	list-style:none;
+	margin-left:-40px;
+	border-bottom:black 2px solid;
+}
+nav ul li a:link, nav ul li a:visited {
+    display:block;
+    background-color:lemonchiffon;
+    color:black;
+   	text-decoration:solid;
+    font-weight: 800;
+}
+nav ul li a:hover, nav ul li a:active{
+    display:block;
+    background-color:darkorange;
+    color:white;
+}
+header{
+    background-image: url("../media/pangolin1.jpg");
+    background-size:100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+	width:100%;
+	top:0%;
+	padding:10px;
+    color:#CD943E;
+	height:auto;
+    opacity:0.8;
+    text-align:right;
+    text-shadow:2px 2px 2px black;
+}
+section{
+	opacity:.8;
+	background:lemonchiffon;
+}
+summary{
+	color:#339966;
+	text-shadow:1px 1px #555;
+	font-size:1.1em;
+}
+aside {
+    background-color:goldenrod;
+    padding: 15px;
+}
+footer {
+    background-color: gold;
+    color: #ffffff;
+    text-align: left;
+    padding: 1%;
+    font-size:large;
+    opacity: .75;
+}
+[class*="col-"] {
+    width: 100%;
+    float:left; 
+    padding:15px;
+}
+button{
+    padding:10px;
+    background:#B08931;
+    color:lemonchiffon;
+}
+button:hover{
+    background:black;
+}
+.icon-bar {
+    width: 100%;
+    background:linear-gradient(#B08931,#C9931D);
+    overflow: auto;
+}
+.icon-bar a {
+    float: left;
+    text-align: center;
+    width: 25%;
+    padding: 4px 0;
+    transition: all 0.3s ease;
+    color: lemonchiffon;
+    font-size: 36px;
+}
+.icon-bar a:hover {
+    background-color: #000;
+}
+@media only screen and (min-width: 600px) {
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    body{
+        max-width:100%;
+        background-color: black;
+    }
+    aside img:hover {
+        transform:translateX(-100px) scale(1.5);
+        box-shadow: 5px 5px black;
+        background-color:gold;
+        border-radius:30px;
+        padding:30px;
+    
+    }
+}

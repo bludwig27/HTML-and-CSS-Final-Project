@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pangolins! (v2)</title>
+<link rel="stylesheet" href="css/screen.css" media="all">
+<link rel="stylesheet" href="css/print.css" media="print">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="description" content="All About Pangolins">
+<meta name="keywords" content="pangolins, wwf, wildlife">
+</head>
+<body>
+<header>
+    <h2 style="font-family:Hope Sans; margin-right: 20%;"><em>meet the</em></h2>
+    <h1>Pangolin!</h1><br>
+ </header>
+ <section class="row">
+	<nav class="col-3 col-m-3">
+    <h3>Pangolin Protectors</h3>
+	<ul>
+	<li><a href="https://www.worldwildlife.org/species/pangolin">World Wildlife Federation: Pangolins</a></li>
+	<li><a href="https://www.savepangolins.org/what-is-a-pangolin">Save Pangolins</a></li>
+	<li><a href="https://www.nationalgeographic.com/animals/mammals/facts/pangolins">National Geographic: Pangolins</a></li>
+	<li><a href="https://www.awf.org/wildlife-conservation/pangolin">African Wildlife Foundation: Pangolins</a></li>
+	</ul>
+	<img src="media/Pangolin.webp" style="background-position:lower left; max-width: 100%;" alt="pangolin on grass" id="pangolinpic">
+    <button onclick="imgSwitch()">Click here for more pangolin pictures!</button>
+    </nav>
+<div class="col-6 col-m-9">
+<p><strong>The gentle <em>pangolin</em> is the world's only scaled mammal</strong>. They feed on ants and termites and are found in Asia and sub-Saharan Africa.<br><br>
+    Pangolins are nocturnal and range in size from that of a small cat to a medium-sized dog. While many people outside of their home range aren't even aware of their existence, they play an important role in their ecosystem.<br><br>
+    The most easily-recognizable feature of the pangolin is its scaly hide, but it has many unique features:</p>
+    <ul>
+        <li>The sticky tongue of a pangolin, which it uses to capture ants, is too big for its mouth, so much of it is stored in a special pocket in its chest when not in use.</li><br>
+        <li>When in danger, pangolins curl up into a spiky ball and can also spray a stinky scent like a skunk. Ew!</li><br>
+        <li>Pangolins can walk on just their hind legs for short distances, and often do, using their powerful tails for balance.</li><br>
+        <li>The most trafficked animal in the world, pangolins are hunted by the hundreds of thousands for their scales, which are believed to have medicinal powers in many Asian countries. Most species are now threatened or endangered due to poaching.</li>
+        </ul>
+    <p>If you would like to know more about the pangolin and the international effort to save them from extinction, visit the links to pangolin protection organizations. <br><br>
+        <em>Thank you for reading!</em></p>
+</div>
+<aside class="col-3 col-m-12">
+   <img alt="a baby pangolin"  src="media/babypangolin.jpg" style="padding:10px; max-width:100%;"> 
+   <br>
+    <img alt="pangolin at large" src="media/pangolin2.webp"  style="padding:10px; max-width:100%;">
+    <br>
+    <img alt="rolled-up pangolin"  src="media/pangolinball.jpg" style="padding:10px; max-width:100%;"> 
+</aside>
+</section>
+<footer>
+    <div class="icon-bar">
+        <a href="https://lisabalbach.com/ludwig22/"><i class="fa fa-home"></i></a>
+        <a href="https://www.linkedin.com/in/benjamin-ludwig-5016616"><i class="fa fa-linkedin-square"></i></a>
+        <a href="https://www.dreamingdoor.net/"><i class="fa fa-paw"></i></a>
+        <a href="https://www.youtube.com/channel/UCIbnqOvBovCouoHUCDBHmUg"><i class="fa fa-youtube"></i></a>
+    </div>
+    <p><strong>&copy; Ben Ludwig 2022<br>bludwig22@mail.nmc.edu</strong></p>
+</footer>
+<script>
+    let currentImage = "Pangolin.webp";
+    function imgSwitch() {
+        if(currentImage == "Pangolin.webp"){
+            currentImage = "babyonboard.webp";
+        }else if(currentImage == "babyonboard.webp"){
+            currentImage = "Pangolinwalk.jpg";
+        }else if(currentImage == "Pangolinwalk.jpg"){
+            currentImage = "white-bellied.jpg";
+        }else if(currentImage == "white-bellied.jpg"){
+            currentImage = "Pangolin.webp";
+        }
+        document.getElementById("pangolinpic").src = "media/" + currentImage;
+    }
+</script>
+</body>
+</html>
